@@ -1,9 +1,9 @@
 // src/router/index.js
 
 import { createRouter, createWebHistory } from 'vue-router';
-import LandingPage from '../components/LandingPage.vue';
-import LoginPage from '../components/LoginPage.vue';
-import RegisterPage from '../components/RegisterPage.vue';
+import LandingPage from '../view/LandingPage.vue';
+import LoginPage from '../view/LoginPage.vue';
+import RegisterPage from '../view/RegisterPage.vue';
 
 const routes = [
   {
