@@ -28,7 +28,7 @@
          <hr class="my-6 border-gray-200 md:hidden" /> 
 
         <div class="text-center md:text-center text-sm text-gray-600">
-          <p class="mb-2">Copyright © 2024 - Konek Market</p>
+          <p class="mb-2">Copyright © 2025 - Konek Market</p>
           <div>
             <a href="#" class="hover:underline">Syarat & Ketentuan</a>
             <span class="mx-2">|</span>

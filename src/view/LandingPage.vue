@@ -47,14 +47,14 @@ const faqs = [
         <div class="flex items-center space-x-4">
           <img src="../assets/images/logo-konek-biru.png" alt="Konek.id Logo" class="h-8">
         </div>
-          <router-link to="/login" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">
+          <router-link to="/login" class="text-white font-black py-2 px-6 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500 hover:shadow-lg hover:opacity-90 transition-all duration-300">
             LOGIN
           </router-link>
       </nav>
     </header>
 
     <main>
-      <section class="container mx-auto px-6 py-16 text-center">
+      <section class=" container mx-auto px-6 py-16 text-center">
         <div class="inline-flex items-center bg-blue-100 text-blue-600 text-sm font-semibold px-4 py-1 rounded-full mb-4">
           <img src="../assets/images/solar-chat.svg" alt="Tag Icon" class="w-4 h-4 mr-2">
           Bundling premium terjangkau
@@ -158,7 +158,7 @@ const faqs = [
             </a>
 
             <div class="mt-8">
-              <button class="w-full bg-white text-blue-600 font-bold py-4 px-6 rounded-full flex items-center justify-center space-x-3 shadow-lg hover:bg-gray-100 transition-colors transform hover:scale-105">
+              <button class="w-full bg-white text-blue-500 font-bold py-4 px-6 rounded-full flex items-center justify-center space-x-3 shadow-lg hover:bg-gray-100 transition-colors transform hover:scale-105">
                 <img src="../assets/images/keranjang.svg" alt="Ikon Keranjang" class="w-8 h-8">
                 <span class="24px text-lg">Langganan Sekarang</span>
               </button>
@@ -169,18 +169,18 @@ const faqs = [
       </section>
 
       <section class="py-20 bg-transparent">
-        <div class="max-w-3xl mx-auto px-4 space-y-4">
+        <div class="max-w-3xl mx-auto px-4 space-y-3">
           
           <div 
             v-for="(faq, index) in faqs" 
             :key="index" 
-            class="bg-blue-50 rounded-xl shadow-sm transition-all duration-300 border border-gray-200"
+            class="bg-blue-50 rounded-xl shadow-sm transition-all duration-300 border border-blue-300"
           >
             <button 
               @click="toggleFaq(index)" 
               class="w-full flex justify-between items-center text-left p-6 focus:outline-none"
             >
-              <span class="text-lg font-semibold text-gray-800">
+              <span class="text-base font-semibold text-black">
                 {{ faq.question }}
               </span>
               <svg
@@ -194,9 +194,9 @@ const faqs = [
 
             <div 
               v-if="openFaq === index" 
-              class="px-6 pb-6 text-gray-600"
+              class="text-base px-6 pb-6 text-black"
             >
-              <div class="border-t border-gray-200 pt-4 mt-2">
+              <div class="border-t border-blue-300 pt-4 mt-2">
                 <p class="text-base leading-relaxed">
                   {{ faq.answer }}
                 </p>
